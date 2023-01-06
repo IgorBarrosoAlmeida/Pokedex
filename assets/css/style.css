@@ -19,7 +19,6 @@ body {
 
 main {
   display: inline-block;
-  margin-top: 2%;
   padding: 15px;
   position: relative;
 }
@@ -36,4 +35,45 @@ main {
     bottom: 55%;
     transform: translate(-63%, 20%);
     height: 18%;
+}
+
+.pokemon__basic {
+  position: absolute;
+  font-weight: 600;
+  font-size: clamp(6px, 3vw, 20px); /* min, defaut, max */
+  color: #AAAAAA;
+  bottom: 40.5%;
+  left: 21%;
+}
+
+.pokemon__basic--name {
+  color: #3A444D;
+  text-transform: capitalize;
+}
+
+.form__search {
+  position: absolute;
+  bottom: 29%;
+  left: 7.5%;
+  width: 37%;
+}
+
+.input__search {
+  border-radius: 5px;
+  padding: 2%;
+  outline: none;
+  border: 2px solid #333333;
+  width: 100%;
+  font-weight: 600;
+  color: #3A444D;
+  font-size: clamp(3px, 2vw, 0.9rem); /* min, defaut, max */
+  box-shadow: -2px 3px 0 #888888, -3px 5px 0 #333333;
+}
+
+.buttons {
+  position: absolute;
+  width: 38%;
+  left: 40%;
+  bottom: 10%;
+  transform: translate(-58%, 0);
 }
