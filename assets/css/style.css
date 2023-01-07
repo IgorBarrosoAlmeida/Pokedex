@@ -72,8 +72,27 @@ main {
 
 .buttons {
   position: absolute;
-  width: 38%;
-  left: 40%;
-  bottom: 10%;
-  transform: translate(-58%, 0);
+  width: 37%;
+  left: 7.5%;
+  bottom: 12%;
+  
+  display: flex;
+  gap: 8%; 
+}
+
+.button {
+  width: 45%;
+  padding: 4%;
+  border-radius: 5px;
+  box-shadow: -2px 3px 0 #222222, -3px 5px 0 #000000;
+  font-size: clamp(5px, 2vw, 0.9rem);
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.button:active {
+  box-shadow: inset -2px 3px 0 #222222;
+  transition: 0.09s;
+  font-size: 0.75rem;
 }
