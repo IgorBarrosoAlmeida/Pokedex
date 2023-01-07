@@ -1,7 +1,7 @@
-/* Importando a fonte */
+/* Importing font */
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
-/* config geral */
+/* general config */
 * {
   margin: 0;
   padding: 0;
@@ -23,12 +23,12 @@ main {
   position: relative;
 }
 
-/* Pokedex */
 .pokedex {
   width: 100%;
   max-width: 550px;
 }
 
+/* Pokedex left side*/
 .pokemon__image {
     position: absolute;
     left: 28.5%;
@@ -37,7 +37,7 @@ main {
     height: 18%;
 }
 
-.pokemon__basic {
+.pokemon__basicData {
   position: absolute;
   font-weight: 600;
   font-size: clamp(6px, 3vw, 20px); /* min, defaut, max */
@@ -46,7 +46,7 @@ main {
   left: 21%;
 }
 
-.pokemon__basic--name {
+.pokemon__basicData--name {
   color: #3A444D;
   text-transform: capitalize;
 }
@@ -95,4 +95,64 @@ main {
   box-shadow: inset -2px 3px 0 #222222;
   transition: 0.09s;
   font-size: 0.75rem;
+}
+
+/* pokedex right side */
+.pokedex__right {
+  position: absolute;
+  width: 34.5%;
+  height: 53%;
+  bottom: 22%;
+  left: 59%;
+  padding: 7px;
+  color: #8FA88F;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+  font-size: clamp(4px, 3vw, 15px);
+}
+
+.pokedex__right--title {
+  font-size: clamp(4px, 3vw, 20px);
+  text-align: center;
+  line-height: 0.7rem;
+}
+
+.atributes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10%;
+  row-gap: 8%;
+}
+
+.atributes--name {
+  text-transform: capitalize;
+  grid-column: span 2;
+}
+
+.atributes--weight {
+  grid-column: span 2;
+}
+
+.types__container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 4%;
+  row-gap: 10%;
+}
+
+.types--title {
+  grid-row: span 2;
+}
+
+.type {
+  background-color: #8FA88F;
+  color: #333333;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.type--name {
+  text-transform: capitalize;
 }
